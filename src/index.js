@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from "../components/Navbar.js"
+import App from "./App.js";
 import "./index.scss"
 
 
 
-const app = document.querySelector("main")
-ReactDOM.render(<Navbar />, app);
+const tj = document.querySelector("main")
+ReactDOM.render(<App />, tj);

@@ -1,19 +1,19 @@
 import React from "react";
-import Pin from "../assets/Path.png"
+import Pin from "../assets/placeholder.png"
 
 export default function Card(props){
     return (
         <section>
-            <img src={props.imageURL}></img>
+            <img className="scene" src={props.imageURL}></img>
             <div>
-                <div>
+                <div className="info">
                     <img src={Pin}></img>
-                    <h6>{props.location}</h6>
+                    <div>{props.location}</div>
                     <a href={props.googleMapsUrl}>View on Google Maps</a>
                 </div>
-                <h3>
+                <h1>
                     {props.title}
-                </h3>
+                </h1>
                 <h4>
                     {props.startDate} - {props.endDate}
                 </h4>
